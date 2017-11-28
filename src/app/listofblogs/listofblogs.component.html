@@ -1,0 +1,105 @@
+<div class="row">
+  <div class="col-sm-5" *ngIf='currentUser'>
+
+    <h1>Add Blog</h1>
+    <form name="form" (ngSubmit)="AddBlog()" #f="ngForm" novalidate>
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !Title.valid }">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" name="Title" [(ngModel)]="model.Title" #Title="ngModel" required />
+      </div>
+
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !body.valid }">
+        <label for="body">Body</label>
+        <textarea rows="20" cols="50" class="form-control" name="body" [(ngModel)]="model.body" #body="ngModel" required ></textarea>
+      </div>
+
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !category.valid }">
+        <label for="category">Category</label>
+        <input type="text" class="form-control" name="category" [(ngModel)]="model.category" #category="ngModel" required />
+      </div>
+
+      <input type="button" value="Add Blog" class ="btn btn-primary" (click)="AddBlog()">
+    </form>
+
+  </div>
+  <div class = "col-sm-7">
+    <div class='panel panel-primary'>
+      <div class='panel-heading'>
+        All Blogs
+      </div>
+      <div class='panel-body'>
+        <div class='row'>
+          <div class='col-md-2'>Search by Title:</div>
+          <div class='col-md-4'>
+            <input type='text' [(ngModel)]='listFilter' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-6'>
+            <h3>Filtered by: {{listFilter}} </h3>
+          </div>
+        </div>
+
+        <div class='table-responsive'>
+          <table class='table'
+                 *ngIf='blogs && blogs.length'>
+            <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Created On</th>
+              <th>Category</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor='let blog of filteredBlogs'>
+              <td><a [routerLink]="['/blogs', blog.id]">
+                {{ blog.Title }}
+              </a>
+              </td>
+              <td>{{blog.createdByName}}</td>
+              <td>{{ blog.createdOn }}</td>
+              <td>{{ blog.category }}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class='panel panel-primary'>
+      <div class='panel-heading'>
+        Favorite Blogs
+      </div>
+      <div class='panel-body'>
+
+
+        <div class='table-responsive'>
+          <table class='table'
+                 *ngIf='favoriteBlogs && favoriteBlogs.length'>
+            <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Created On</th>
+              <th>Category</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor='let blog of favoriteBlogs'>
+              <td><a>
+                {{ blog.Title }}
+              </a>
+              </td>
+              <td>{{blog.createdByName}}</td>
+              <td>{{ blog.createdOn }}</td>
+              <td>{{ blog.category }}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

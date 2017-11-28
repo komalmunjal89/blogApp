@@ -1,0 +1,13 @@
+.jumbotron {
+  position: relative;
+  background: #fff url("../assets/blogging.jpg") center center;/*slide.jpg =>you image*/
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1{
+  color: darkseagreen;
+
+}

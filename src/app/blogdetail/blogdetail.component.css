@@ -1,0 +1,18 @@
+.panel-body{
+  color: darkseagreen;
+  background-color: white;
+}
+.panel-primary{
+  background-color: lightpink;
+  border-color: lightpink;
+}
+.panel-heading{
+  background-color: lightpink;
+  border-color: lightpink;
+}
+.btn-primary{
+  color: white;
+  border-color: lightpink;
+  background-color: lightpink;
+
+}

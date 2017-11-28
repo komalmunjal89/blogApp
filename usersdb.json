@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "komal",
+      "password": "munjal",
+      "favorites": [
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "username": "munjal",
+      "password": "komal",
+      "favorites": [
+        2
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "createdBy": 1,
+      "createdByName": "komal",
+      "Title": "My first blog",
+      "body": "Nam porttitor ornare erat, sit amet ultricies libero.hello hi where are you? Nullam consectetur, lectus quis laoreet fringilla, orci nisi bibendum nisl, eu gravida diam urna sit amet massa. Duis a magna sagittis, dapibus lorem sodales, sodales leo. Proin nec varius ligula. Etiam vestibulum ultricies libero et ornare. Suspendisse potenti. Proin finibus nunc nulla, at iaculis orci dictum vitae. Vivamus eu dapibus risus.",
+      "createdOn": "Mon Nov 13 2017",
+      "category": "Non Technical"},
+    {
+      "id": 2,
+      "createdBy": 2,
+      "createdByName": "munjal",
+      "Title": "My Second blog",
+      "body": "Nam porttitor ornare erat, sit amet ultricies libero.hello hi where are you? Nullam consectetur, lectus quis laoreet fringilla, orci nisi bibendum nisl, eu gravida diam urna sit amet massa. Duis a magna sagittis, dapibus lorem sodales, sodales leo. Proin nec varius ligula. Etiam vestibulum ultricies libero et ornare. Suspendisse potenti. Proin finibus nunc nulla, at iaculis orci dictum vitae. Vivamus eu dapibus risus.",
+      "createdOn": "Mon Nov 13 2017",
+      "category": "Non Technical"
+    },
+    {
+      "Title": "Third Blog",
+      "body": "Aliquam erat volutpat. In rhoncus libero mjjddi ddwidiw jsjsjdnjde dwdwec swcwcjx xjxwcjcj cjwbcwjwbcjcb jbcjbcj jccjb eu elit maximus ullamcorper. Quisque ac scelerisque metus. Nunc consectetur interdum odio, sit amet pellentesque dui convallis ut. Nam a velit non est interdum imperdiet non sit amet lorem. Vivamus sed nibh a mi ullamcorper accumsan. Quisque malesuada elit id lobortis lobortis. Fusce lacinia lectus nec hendrerit auctor. Nulla porta lectus eu lorem tempus, sed porttitor felis varius. Aliquam non varius nisl. Nunc id nulla ut purus mattis ultricies et vitae est.",
+      "createdBy": 1,
+      "createdByName": "komal",
+      "createdOn": "Mon Nov 13 2017",
+      "category": "Non Technical",
+      "id": 3
+    },
+    {
+      "Title": "Fourth blog",
+      "body": "jhkhsa dejdjdf diidhihd idhidiwd idwhiwdhiwd idwhidhiw dwihiwdhiwdh",
+      "createdBy": 1,
+      "createdByName": "komal",
+      "createdOn": "Wed Nov 15 2017",
+      "category": "Physchiological",
+      "id": 5
+    },
+    {
+      "Title": "Fifth Blog",
+      "body": "ajnk;sjkahskdjhasdxa hdhdhd dhhddh hdhdhd hddhhd hdhddhd",
+      "createdBy": 1,
+      "createdByName": "komal",
+      "createdOn": "Wed Nov 15 2017",
+      "category": "Non Technical",
+      "id": 6
+    },
+    {
+      "Title": "sixth blog",
+      "body": "this is to check whether the blog is working fine!",
+      "createdBy": 1,
+      "createdByName": "munjal",
+      "createdOn": "Wed Nov 15 2017",
+      "category": "cultural",
+      "id": 7
+    },
+    {
+      "Title": "heyyyy",
+      "body": "yuegfiulwegfbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "createdBy": 1,
+      "createdByName": "komal",
+      "createdOn": "Sun Nov 19 2017",
+      "category": "Technology",
+      "id": 8
+    }
+  ]
+}

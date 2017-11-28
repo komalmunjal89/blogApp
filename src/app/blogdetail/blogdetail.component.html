@@ -1,0 +1,61 @@
+<div class='panel panel-primary' style="width: 1000px; margin: 0 auto;" *ngIf='blog'>
+  <div class='panel-heading'>
+    {{ blog.Title}}
+  </div>
+
+  <div class='panel-body'>
+    <div class='row'>
+      <div class='col-md-10'>
+        <div class='row'>
+
+          <div class='col-md-10'>Title: {{blog.Title}}</div>
+          <br>
+        </div>
+        <div class='row'>
+          <div class='col-md-10'><h4>{{blog.body}}</h4></div>
+        </div>
+        <div class='row'>
+          <div class='col-md-3'>Created By:</div>
+          <div class='col-md-6'>{{blog.createdByName}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-3'>Created On:</div>
+          <div class='col-md-6'>{{blog.createdOn}}</div>
+        </div>
+<hr>
+
+        <input type="button" value="Delete Blog" class ="btn btn-primary" (click)="DeleteBlog()">
+        <input type="button" value="Edit Blog" class ="btn btn-primary" (click)="EditBlog(blog)">
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="edit==true">
+  <div class="col-sm-5">
+
+    <h1>Edit Blog</h1>
+    <form name="form" #f="ngForm" novalidate>
+      <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" name="Title" [(ngModel)]="title" required />
+      </div>
+
+      <div class="form-group">
+        <label for="body">Body</label>
+        <textarea rows="20" cols="50" class="form-control" name="body" [(ngModel)]="body" required ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input type="text" class="form-control" name="category" [(ngModel)]="category" required />
+      </div>
+
+      <input type="button" value="Update Blog" class ="btn btn-primary" (click)="updateBlog(title,body,category,blog.id)">
+    </form>
+
+  </div>
+</div>

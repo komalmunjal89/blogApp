@@ -1,0 +1,38 @@
+.btn-primary{
+  color:white;
+  background-color: lightpink;
+  border-color: lightpink;
+}
+h1{
+  color:lightpink;
+}
+.form-group{
+  color: lightpink;
+}
+.table{
+  color:darkseagreen;
+
+}
+.table-responsive{
+  color:lightpink;
+}
+.panel-primary{
+  color:lightpink;
+  border-color: lightpink;
+}
+.col-sm-7{
+  color: lightpink;
+}
+.row{
+  color: lightpink;
+}
+.panel-body{
+  color:lightpink;
+}
+.panel-heading{
+  background-color: lightpink;
+  border-color: lightpink;
+}
+.panel-body{
+  border-color: lightpink;
+}
